@@ -1,9 +1,12 @@
 import React, {Component} from 'react';
+import './App.css';
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { newItem: '', list: []  };
+    this.state = { newItem: '', list: [], list2: []  };
+
+
   }
 
   updateInput(key, value) {
@@ -28,6 +31,7 @@ class App extends Component {
     });
   }
 
+
   deleteItem(id) {
     const list = [...this.state.list];
 
@@ -39,6 +43,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className="grid-container">
         <div>
           Add an Item
           <br/>
@@ -53,7 +58,13 @@ class App extends Component {
           <ul>
             {this.state.list.map(item => {
               return(
-                <li key={item.id}>
+                <li
+                key={item.id} className="element">
+                <button>img</button> 
+                <input 
+                  type="checkbox"
+                  onChange={() => alert(item.value)}
+                />
                   {item.value}
                   <button 
                     onClick={() => this.deleteItem(item.id)}
@@ -64,6 +75,13 @@ class App extends Component {
               )
             })}
           </ul>
+        </div>
+        <div>
+          second container
+          <ul>
+            
+          </ul>
+        </div>
         </div>
       </div>
     );
