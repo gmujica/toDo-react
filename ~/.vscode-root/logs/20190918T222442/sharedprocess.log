@@ -1,0 +1,14 @@
+[2019-09-18 22:24:46.437] [sharedprocess] [info] main {"machineId":"0af5714f4098eaf169d2d2435d3a042cf2b91c7884d5ac3f43a89ca41136a320"}
+[2019-09-18 22:25:26.426] [sharedprocess] [info] Starting to clean up unused language packs.
+[2019-09-18 22:49:10.625] [sharedprocess] [info] Installing extension: burkeholland.simple-react-snippets
+[2019-09-18 22:49:13.567] [sharedprocess] [info] Downloaded extension: burkeholland.simple-react-snippets /tmp/953d4848-6f90-4050-b35a-d04a943d2ebe
+[2019-09-18 22:49:13.867] [sharedprocess] [info] Extracted extension to /home/gregory/.vscode/extensions/.burkeholland.simple-react-snippets-1.2.2: burkeholland.simple-react-snippets
+[2019-09-18 22:49:13.868] [sharedprocess] [info] Renamed to /home/gregory/.vscode/extensions/burkeholland.simple-react-snippets-1.2.2
+[2019-09-18 22:49:13.869] [sharedprocess] [info] Installation completed. burkeholland.simple-react-snippets
+[2019-09-18 22:49:13.874] [sharedprocess] [info] Extensions installed successfully: burkeholland.simple-react-snippets
+[2019-09-18 22:49:29.867] [sharedprocess] [info] Installing extension: skyran.js-jsx-snippets
+[2019-09-18 22:49:30.482] [sharedprocess] [info] Downloaded extension: skyran.js-jsx-snippets /tmp/2834b030-6306-46a3-b7b0-bd3acbc66f55
+[2019-09-18 22:49:30.506] [sharedprocess] [info] Extracted extension to /home/gregory/.vscode/extensions/.skyran.js-jsx-snippets-0.8.0: skyran.js-jsx-snippets
+[2019-09-18 22:49:30.506] [sharedprocess] [info] Renamed to /home/gregory/.vscode/extensions/skyran.js-jsx-snippets-0.8.0
+[2019-09-18 22:49:30.508] [sharedprocess] [info] Installation completed. skyran.js-jsx-snippets
+[2019-09-18 22:49:30.511] [sharedprocess] [info] Extensions installed successfully: skyran.js-jsx-snippets
