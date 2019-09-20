@@ -27,17 +27,30 @@ class App extends Component {
 
     this.setState({
       list,
-      newItem:''
+      newItem:'',
+
     });
   }
-
+  addToDone(i) {
+    const selectedItem = this.state.list[i];
+    let tempArray = this.state.list;
+    tempArray.splice(i, 1);
+    const tempArray2 = this.state.list2;
+    tempArray2.push(selectedItem);
+    this.setState({
+      list: tempArray,
+      list2: tempArray2
+    })
+    
+  };
 
   deleteItem(id) {
     const list = [...this.state.list];
-
+    const list2 = [...this.state.list2];
     const updatedList = list.filter(item => item.id !== id);
+    const updatedList2 = list2.filter(item => item.id !== id);
 
-    this.setState({list: updatedList});
+    this.setState({list: updatedList, list2: updatedList2});
   }
 
   render() {
@@ -49,21 +62,21 @@ class App extends Component {
           <br/>
           <input 
             type="text" 
-            placeholder="Type item here..." 
+            placeholder="Crear nueva tarea" 
             value={this.state.newItem} 
             onChange={e => this.updateInput ("newItem", e.target.value)} 
           />
           <button onClick={() => this.addItem()}>Add</button>
           <br />
           <ul>
-            {this.state.list.map(item => {
+            {this.state.list.map((item, i) => {
               return(
                 <li
                 key={item.id} className="element">
                 <button>img</button> 
                 <input 
                   type="checkbox"
-                  onChange={() => alert(item.value)}
+                  onChange={() => this.addToDone(i)}
                 />
                   {item.value}
                   <button 
@@ -79,7 +92,24 @@ class App extends Component {
         <div>
           second container
           <ul>
-            
+          {this.state.list2.map((item, i) => {
+              return(
+                <li
+                key={item.id} className="element">
+                <button>img</button> 
+                <input 
+                  type="checkbox"
+                  defaultChecked="true"
+                  />
+                  {item.value}
+                  <button 
+                    onClick={() => this.deleteItem(item.id)}
+                  >
+                    x
+                  </button>
+                </li>
+              )
+            })}
           </ul>
         </div>
         </div>

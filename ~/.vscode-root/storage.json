@@ -358,8 +358,7 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "Show &&Side Bar",
-                                    "checked": true
+                                    "label": "Show &&Side Bar"
                                 },
                                 {
                                     "id": "workbench.action.toggleStatusbarVisibility",
@@ -1375,5 +1374,19 @@
         }
     },
     "theme": "vs-dark",
-    "themeBackground": "#263238"
+    "themeBackground": "#263238",
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///home/gregory/to-do",
+            "backupPath": "/home/gregory/to-do/~/.vscode-root/Backups/a54d4d66c3bc7c514e4a96617ea4c948",
+            "uiState": {
+                "mode": 0,
+                "x": 855,
+                "y": 56,
+                "width": 1024,
+                "height": 527
+            }
+        },
+        "openedWindows": []
+    }
 }
