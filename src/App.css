@@ -1,11 +1,75 @@
 .App {
   /*text-align: center;*/
+  font-family: 'Rubik', sans-serif;
 
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 456px 456px;
+  
 }
 
+.list1 {
+  width: 390px;
+  list-style-type: none;
 
+}
+
+.span {border-bottom: 1px solid;}
+
+.input {
+  width: 390px;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  padding: 7px;
+  align-self: center;
+  border-bottom: 1px solid;
+  
+}
+
+.element {
+  width: 315px;
+}
+
+.addBtn {
+
+  height: 20px;
+  width: 20px;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-image: url(../src/assets/agregar.svg);
+  background-repeat: no-repeat;
+    
+}
+
+.delBtn {
+  height: 20px;
+  width: 20px;
+  float: right;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-image: url(../src/assets/borrar.svg);
+  background-repeat: no-repeat;
+} 
+
+.moveBtn {
+  height: 20px;
+  width: 20px;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-image: url(../src/assets/Mover.svg);
+  background-repeat: no-repeat;
+}

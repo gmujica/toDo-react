@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import { DndProvider } from 'react-dnd';
+import HTML5Backend from 'react-dnd-html5-backend';
 import './App.css';
 
 class App extends Component {
@@ -60,34 +62,37 @@ class App extends Component {
         <div>
           Add an Item
           <br/>
+          <button className="addBtn" onClick={() => this.addItem()}></button>
           <input 
             type="text" 
-            placeholder="Crear nueva tarea" 
+            placeholder="Crear nueva tarea"
+            className="input" 
             value={this.state.newItem} 
             onChange={e => this.updateInput ("newItem", e.target.value)} 
           />
-          <button onClick={() => this.addItem()}>Add</button>
           <br />
-          <ul>
-            {this.state.list.map((item, i) => {
-              return(
-                <li
-                key={item.id} className="element">
-                <button>img</button> 
-                <input 
-                  type="checkbox"
-                  onChange={() => this.addToDone(i)}
-                />
-                  {item.value}
-                  <button 
-                    onClick={() => this.deleteItem(item.id)}
-                  >
-                    x
-                  </button>
-                </li>
-              )
-            })}
-          </ul>
+          <DndProvider backend={HTML5Backend}>
+            <ul className="list1">
+              {this.state.list.map((item, i) => {
+                return(
+                  <li
+                  key={item.id} className="element">
+                  <div className="moveBtn"></div> 
+                  <input 
+                    type="checkbox"
+                    onChange={() => this.addToDone(i)}
+                  />
+                    <span className="span">{item.value}</span>
+                    <div
+                    className="delBtn" 
+                      onClick={() => this.deleteItem(item.id)}
+                    >
+                    </div>
+                  </li>
+                )
+              })}
+            </ul>
+          </DndProvider>
         </div>
         <div>
           second container
@@ -103,9 +108,9 @@ class App extends Component {
                   />
                   {item.value}
                   <button 
+                  className="delBtn"
                     onClick={() => this.deleteItem(item.id)}
                   >
-                    x
                   </button>
                 </li>
               )

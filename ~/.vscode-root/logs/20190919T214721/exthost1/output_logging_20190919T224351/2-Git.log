@@ -11,158 +11,6 @@ Open repository: /home/gregory/to-do
 fatal: no upstream configured for branch 'master'
 > git for-each-ref --format %(refname) %(objectname) --sort -committerdate
 > git remote --verbose
-> git show :src/App.js
-> git check-ignore -v -z --stdin
-> git status -z -u
-> git symbolic-ref --short HEAD
-> git rev-parse master
-> git rev-parse --symbolic-full-name master@{u}
-fatal: no upstream configured for branch 'master'
-> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
-> git remote --verbose
-> git status -z -u
-> git symbolic-ref --short HEAD
-> git rev-parse master
-> git rev-parse --symbolic-full-name master@{u}
-fatal: no upstream configured for branch 'master'
-> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
-> git remote --verbose
-> git status -z -u
-> git symbolic-ref --short HEAD
-> git rev-parse master
-> git rev-parse --symbolic-full-name master@{u}
-fatal: no upstream configured for branch 'master'
-> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
-> git remote --verbose
-> git status -z -u
-> git symbolic-ref --short HEAD
-> git rev-parse master
-> git rev-parse --symbolic-full-name master@{u}
-fatal: no upstream configured for branch 'master'
-> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
-> git remote --verbose
-> git status -z -u
-> git symbolic-ref --short HEAD
-> git rev-parse master
-> git rev-parse --symbolic-full-name master@{u}
-fatal: no upstream configured for branch 'master'
-> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
-> git remote --verbose
-> git status -z -u
-> git symbolic-ref --short HEAD
-> git rev-parse master
-> git rev-parse --symbolic-full-name master@{u}
-fatal: no upstream configured for branch 'master'
-> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
-> git remote --verbose
-> git status -z -u
-> git symbolic-ref --short HEAD
-> git rev-parse master
-> git rev-parse --symbolic-full-name master@{u}
-fatal: no upstream configured for branch 'master'
-> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
-> git remote --verbose
-> git status -z -u
-> git symbolic-ref --short HEAD
-> git rev-parse master
-> git rev-parse --symbolic-full-name master@{u}
-fatal: no upstream configured for branch 'master'
-> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
-> git remote --verbose
-> git status -z -u
-> git symbolic-ref --short HEAD
-> git rev-parse master
-> git rev-parse --symbolic-full-name master@{u}
-fatal: no upstream configured for branch 'master'
-> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
-> git remote --verbose
-> git status -z -u
-> git symbolic-ref --short HEAD
-> git rev-parse master
-> git rev-parse --symbolic-full-name master@{u}
-fatal: no upstream configured for branch 'master'
-> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
-> git remote --verbose
-> git status -z -u
-> git symbolic-ref --short HEAD
-> git rev-parse master
-> git rev-parse --symbolic-full-name master@{u}
-fatal: no upstream configured for branch 'master'
-> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
-> git remote --verbose
-> git status -z -u
-> git symbolic-ref --short HEAD
-> git rev-parse master
-> git rev-parse --symbolic-full-name master@{u}
-fatal: no upstream configured for branch 'master'
-> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
-> git remote --verbose
-> git status -z -u
-> git symbolic-ref --short HEAD
-> git rev-parse master
-> git rev-parse --symbolic-full-name master@{u}
-fatal: no upstream configured for branch 'master'
-> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
-> git remote --verbose
-> git status -z -u
-> git symbolic-ref --short HEAD
-> git rev-parse master
-> git rev-parse --symbolic-full-name master@{u}
-fatal: no upstream configured for branch 'master'
-> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
-> git remote --verbose
-> git status -z -u
-> git symbolic-ref --short HEAD
-> git rev-parse master
-> git rev-parse --symbolic-full-name master@{u}
-fatal: no upstream configured for branch 'master'
-> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
-> git remote --verbose
-> git status -z -u
-> git symbolic-ref --short HEAD
-> git rev-parse master
-> git rev-parse --symbolic-full-name master@{u}
-fatal: no upstream configured for branch 'master'
-> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
-> git remote --verbose
-> git status -z -u
-> git symbolic-ref --short HEAD
-> git rev-parse master
-> git rev-parse --symbolic-full-name master@{u}
-fatal: no upstream configured for branch 'master'
-> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
-> git remote --verbose
-> git status -z -u
-> git symbolic-ref --short HEAD
-> git rev-parse master
-> git rev-parse --symbolic-full-name master@{u}
-fatal: no upstream configured for branch 'master'
-> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
-> git remote --verbose
-> git show :src/App.js
-> git status -z -u
-> git symbolic-ref --short HEAD
-> git rev-parse master
-> git rev-parse --symbolic-full-name master@{u}
-fatal: no upstream configured for branch 'master'
-> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
-> git remote --verbose
-> git status -z -u
-> git symbolic-ref --short HEAD
-> git rev-parse master
-> git rev-parse --symbolic-full-name master@{u}
-fatal: no upstream configured for branch 'master'
-> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
-> git remote --verbose
-> git show :src/index.css
-> git show :src/App.test.js
-> git show :src/App.css
-> git show :src/App.js
-> git show :src/index.css
-> git show :src/App.js
-> git show :src/App.css
-> git show :src/App.js
-> git show :src/App.css
 > git rev-parse --show-toplevel
 > git rev-parse --git-dir
 > git config --get commit.template
@@ -176,3 +24,136 @@ fatal: no upstream configured for branch 'master'
 > git remote --verbose
 > git check-ignore -v -z --stdin
 > git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -v -z --stdin
+> git show :src/App.js
+> git show :src/App.css
+> git show :src/App.js
+> git show :src/App.css
+> git show :src/App.js
+> git check-ignore -v -z --stdin
+> git show :public/index.html
+> git show :src/App.css
+> git show :src/App.js
+> git show :src/App.css
+> git show :src/App.js
+> git show :src/App.css
+> git show :src/App.js
+> git show :src/App.css
+> git show :src/App.js
+> git show :public/index.html
+> git show :src/App.css
+> git show :src/App.js
+> git show :src/App.css
+> git show :src/App.js
+> git show :src/App.css
+> git show :src/App.js
+> git show :public/index.html
+> git show :src/App.css
+> git show :public/index.html
+> git show :src/App.js
+> git show :src/App.css
+> git show :src/App.js
+> git show :public/index.html
+> git show :src/App.css
+> git show :src/App.js
