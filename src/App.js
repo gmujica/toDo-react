@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import { DndProvider } from 'react-dnd';
-import HTML5Backend from 'react-dnd-html5-backend';
 import './App.css';
 
 class App extends Component {
@@ -60,7 +58,7 @@ class App extends Component {
       <div className="App">
         <div className="grid-container">
         <div>
-          Add an Item
+          <h2>Por hacer:</h2>
           <br/>
           <button className="addBtn" onClick={() => this.addItem()}></button>
           <input 
@@ -71,7 +69,7 @@ class App extends Component {
             onChange={e => this.updateInput ("newItem", e.target.value)} 
           />
           <br />
-          <DndProvider backend={HTML5Backend}>
+          
             <ul className="list1">
               {this.state.list.map((item, i) => {
                 return(
@@ -92,21 +90,20 @@ class App extends Component {
                 )
               })}
             </ul>
-          </DndProvider>
         </div>
         <div>
-          second container
-          <ul>
+        <h2>Hecho:</h2>
+          <ul className="list2">
           {this.state.list2.map((item, i) => {
               return(
                 <li
                 key={item.id} className="element">
-                <button>img</button> 
+                <div className="moveBtn"></div> 
                 <input 
                   type="checkbox"
                   defaultChecked="true"
                   />
-                  {item.value}
+                  <span className="span">{item.value}</span>
                   <button 
                   className="delBtn"
                     onClick={() => this.deleteItem(item.id)}

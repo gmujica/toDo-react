@@ -1,6 +1,7 @@
 .App {
   /*text-align: center;*/
   font-family: 'Rubik', sans-serif;
+  padding: 15%;
 
 }
 
@@ -10,11 +11,16 @@
   
 }
 
-.list1 {
+.list1,
+.list2 {
   width: 390px;
   list-style-type: none;
 
 }
+
+.list2 span {color: rgb(185, 185, 185);}
+
+h2 {color: rgb(185, 185, 185);}
 
 .span {border-bottom: 1px solid;}
 
@@ -32,7 +38,10 @@
 
 .element {
   width: 315px;
+  padding: 7px;
 }
+
+.element input, span {margin-left: 1em;}
 
 .addBtn {
 
