@@ -15,14 +15,21 @@
 .list2 {
   width: 390px;
   list-style-type: none;
+  cursor: pointer;
 
 }
 
-.list2 span {color: rgb(185, 185, 185);}
+.list2 span {
+  color: rgb(185, 185, 185);
+}
 
-h2 {color: rgb(185, 185, 185);}
+h2 {
+  color: rgb(185, 185, 185);
+}
 
-.span {border-bottom: 1px solid;}
+.span {
+  border-bottom: 1px solid;
+}
 
 .input {
   width: 390px;
@@ -39,12 +46,19 @@ h2 {color: rgb(185, 185, 185);}
 .element {
   width: 315px;
   padding: 7px;
+  display: grid;
+  grid-auto-flow: column;
 }
 
-.element input, span {margin-left: 1em;}
+.element input, span {
+  margin-left: 0em;
+}
+
+.element span {
+  width: 200px;
+}
 
 .addBtn {
-
   height: 20px;
   width: 20px;
   float: left;
@@ -55,13 +69,11 @@ h2 {color: rgb(185, 185, 185);}
   border-radius: 50%;
   background-image: url(../src/assets/agregar.svg);
   background-repeat: no-repeat;
-    
 }
 
 .delBtn {
   height: 20px;
   width: 20px;
-  float: right;
   text-align: center;
   font-size: 16px;
   cursor: pointer;

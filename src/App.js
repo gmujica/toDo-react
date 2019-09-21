@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
+import Sortable from 'sortablejs';
+import Handler from './handlers'
+import Item from './item';
 import './App.css';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = { newItem: '', list: [], list2: []  };
-
 
   }
 
@@ -21,15 +23,8 @@ class App extends Component {
       value: this.state.newItem
     };
 
-    const list = [...this.state.list];
-
-    list.push(newItem);
-
-    this.setState({
-      list,
-      newItem:'',
-
-    });
+    global.storage.dispatch({ type: "ADD-TO-DO", item: newItem})
+    this.setState({newItem: ""})
   }
   addToDone(i) {
     const selectedItem = this.state.list[i];
@@ -53,6 +48,25 @@ class App extends Component {
     this.setState({list: updatedList, list2: updatedList2});
   }
 
+  componentDidMount() {
+    var el = document.querySelector('.list1');
+    
+    var sortable = Sortable.create(el);
+
+    global.storage.on('ADD-TO-DONE', () => {
+      
+      this.setState({ list: global.storage.getState().Main.list, list2: global.storage.getState().Main.list2 })
+    })
+    global.storage.on('DELETE-ITEM', () => {
+      console.log(global.storage.getState().Main);
+      
+      this.setState({ list: global.storage.getState().Main.list, list2: global.storage.getState().Main.list2 })
+    })
+    global.storage.on('ADD-TO-DO', () => {
+      this.setState({ list: global.storage.getState().Main.list, list2: global.storage.getState().Main.list2 })
+    })
+  }
+
   render() {
     return (
       <div className="App">
@@ -69,24 +83,10 @@ class App extends Component {
             onChange={e => this.updateInput ("newItem", e.target.value)} 
           />
           <br />
-          
             <ul className="list1">
               {this.state.list.map((item, i) => {
                 return(
-                  <li
-                  key={item.id} className="element">
-                  <div className="moveBtn"></div> 
-                  <input 
-                    type="checkbox"
-                    onChange={() => this.addToDone(i)}
-                  />
-                    <span className="span">{item.value}</span>
-                    <div
-                    className="delBtn" 
-                      onClick={() => this.deleteItem(item.id)}
-                    >
-                    </div>
-                  </li>
+                  <Item key={item.id} i={i} item={item} />
                 )
               })}
             </ul>
@@ -96,20 +96,7 @@ class App extends Component {
           <ul className="list2">
           {this.state.list2.map((item, i) => {
               return(
-                <li
-                key={item.id} className="element">
-                <div className="moveBtn"></div> 
-                <input 
-                  type="checkbox"
-                  defaultChecked="true"
-                  />
-                  <span className="span">{item.value}</span>
-                  <button 
-                  className="delBtn"
-                    onClick={() => this.deleteItem(item.id)}
-                  >
-                  </button>
-                </li>
+                <Item key={item.id} i={i} item={item} isDesabled={true} />
               )
             })}
           </ul>

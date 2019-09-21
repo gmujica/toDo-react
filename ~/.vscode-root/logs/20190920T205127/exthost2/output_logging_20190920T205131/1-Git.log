@@ -1,0 +1,48 @@
+Looking for git in: git
+Using git 2.17.1 from git
+> git rev-parse --show-toplevel
+> git rev-parse --git-dir
+> git config --get commit.template
+Open repository: /home/gregory/to-do
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show :src/item/index.js
+> git ls-files --stage -- src/item/
+> git show :src/App.js
+> git check-ignore -v -z --stdin
+> git show :src/handlers/MainHandler.js
+> git ls-files --stage -- src/handlers/
+> git show :src/App.js
+> git show :src/item/index.js
+> git ls-files --stage -- src/item/
+> git show :src/App.js
+> git show :src/handlers/MainHandler.js
+> git ls-files --stage -- src/handlers/
+> git show :src/App.js
+> git show :src/item/index.js
+> git ls-files --stage -- src/item/
+> git show :src/App.js
+> git show :src/handlers/MainHandler.js
+> git ls-files --stage -- src/handlers/
+> git show :src/App.js
+> git show :src/item/index.js
+> git ls-files --stage -- src/item/
+> git show :src/App.js
+> git show :src/handlers/MainHandler.js
+> git ls-files --stage -- src/handlers/
+> git show :src/item/index.js
+> git ls-files --stage -- src/item/
+> git show :src/App.js
+> git show :src/item/index.js
+> git ls-files --stage -- src/item/
+> git show :src/App.js
+> git show :src/item/index.js
+> git ls-files --stage -- src/item/

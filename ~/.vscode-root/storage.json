@@ -49,6 +49,7 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
+                                        "fsPath": "/home/gregory/to-do",
                                         "external": "file:///home/gregory/to-do",
                                         "path": "/home/gregory/to-do",
                                         "scheme": "file"
@@ -168,7 +169,7 @@
                     },
                     {
                         "id": "workbench.action.closeFolder",
-                        "label": "Close &&Workspace"
+                        "label": "Close &&Folder"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -357,7 +358,8 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "Show &&Side Bar"
+                                    "label": "Show &&Side Bar",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleStatusbarVisibility",
@@ -1376,14 +1378,17 @@
     "themeBackground": "#263238",
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/gregory/to-do",
-            "backupPath": "/home/gregory/to-do/~/.vscode-root/Backups/a54d4d66c3bc7c514e4a96617ea4c948",
+            "workspaceIdentifier": {
+                "id": "78f7b69c8d6f782521704055fc77183f",
+                "configURIPath": "file:///home/gregory/to-do/~/.vscode-root/Workspaces/1568951031004/workspace.json"
+            },
+            "backupPath": "/home/gregory/to-do/~/.vscode-root/Backups/78f7b69c8d6f782521704055fc77183f",
             "uiState": {
                 "mode": 0,
-                "x": 855,
-                "y": 56,
-                "width": 1024,
-                "height": 527
+                "x": 961,
+                "y": 29,
+                "width": 959,
+                "height": 1024
             }
         },
         "openedWindows": []
